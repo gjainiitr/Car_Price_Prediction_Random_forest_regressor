@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car Price Prediction</title>
+    </head>
+    <body>
+        <h1>Car Selling price prediction</h1>
+        <form action="./predict" method="POST">
+            <p>Current Price: <input type="number" placeholder="1.0" step="0.01" name="curr_price"></p>
+            <p>KMs Driven: <input type="number" name="kms_driven"></p>
+            <p>Year: <input type="number" name="year"></p>
+            
+            <p>
+                Owner Status:            
+                <select name="owner-type">            
+                  <option value="0">First Owner</option>            
+                  <option value="1">Second Owner</option>
+                  <option value="2">Third Owner</option>            
+                  <option value="3">Fourth Owner and Beyond</option>
+                </select>
+            </p>
+
+            <p>
+                Fuel Type:            
+                <select name="fuel-type">            
+                  <option value="1">Diesel</option>            
+                  <option value="0">Petrol</option>
+                  <option value="-1">CNG</option>
+                </select>
+            </p>
+
+            <p>
+                Seller Type:            
+                <select name="seller-type">            
+                  <option value="1">Individual</option>            
+                  <option value="0">Dealer</option>
+                </select>
+            </p>
+
+            <p>
+                Transmission:            
+                <select name="transmission">            
+                  <option value="1">Manual</option>            
+                  <option value="0">Automatic</option>
+                </select>
+            </p>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
